@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJlfc42886cb2026b9dd1ae1b9541e38abd"/>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl6d7c83ed1e583d1caff8a020677652bf"/>
   <meta charset="utf-8">
   <title>Our Impact</title>
   <meta name="generator" content="Google Web Designer 5.1.1.0611">
@@ -45,20 +45,6 @@ body {
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
-}
-.gwd-button-11cd {
-    position: absolute;
-    width: 100px;
-    height: 24px;
-    left: 24px;
-    top: 243px;
-}
-.gwd-button-1yv4 {
-    position: absolute;
-    width: 100px;
-    height: 24px;
-    top: 243px;
-    left: 239px;
 }
 @keyframes gwd-gen-kc0pgwdanimation_gwd-keyframes {
     0% {
@@ -134,6 +120,20 @@ body {
     animation: gwd-gen-kc0pgwdanimation_gwd-keyframes 1.5s linear 0.5s 1 normal forwards;
     -webkit-animation: gwd-gen-kc0pgwdanimation_gwd-keyframes 1.5s linear 0.5s 1 normal forwards;
     -moz-animation: gwd-gen-kc0pgwdanimation_gwd-keyframes 1.5s linear 0.5s 1 normal forwards;
+}
+.gwd-div-1w59 {
+    position: absolute;
+    width: 1122px;
+    height: 215px;
+    left: -2px;
+    top: 0px;
+}
+.gwd-div-1myy {
+    position: absolute;
+    width: 1122px;
+    height: 215px;
+    left: -2px;
+    top: 0px;
 }</style><style type="text/css" data-gwd-secondary-animations="">.htmlNoPages.ForwardStart .gwd-gen-kc0pgwdanimation {
     animation: gwd-gen-kc0pgwdanimation_gwd-keyframes_ForwardStart 1.5s linear 0s 1 normal forwards;
     -webkit-animation: gwd-gen-kc0pgwdanimation_gwd-keyframes_ForwardStart 1.5s linear 0s 1 normal forwards;
@@ -379,14 +379,6 @@ body {
 }</style>
   <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
   <script type="text/javascript" gwd-events="handlers">
-    gwd.auto_ForwardbuttonClick = function(event) {
-      // GWD Predefined Function
-      gwd.actions.timeline.gotoAndPlay('document.body', 'ForwardStart');
-    };
-    gwd.auto_BackbuttonClick = function(event) {
-      // GWD Predefined Function
-      gwd.actions.timeline.gotoAndPlay('document.body', 'BackwardStart');
-    };
     gwd.auto_BodyEvent_2 = function(event) {
       // GWD Predefined Function
       gwd.actions.timeline.pause('document.body');
@@ -395,22 +387,30 @@ body {
       // GWD Predefined Function
       gwd.actions.timeline.pause('document.body');
     };
+    gwd.auto_StartClick = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.gotoAndPlay('document.body', 'ForwardStart');
+    };
+    gwd.auto_BackClick = function(event) {
+      // GWD Predefined Function
+      gwd.actions.timeline.gotoAndPlay('document.body', 'BackwardStart');
+    };
   </script>
   <script type="text/javascript" gwd-events="registration">
     // Support code for event handling in Google Web Designer
      // This script block is auto-generated. Please do not edit!
     gwd.actions.events.registerEventHandlers = function(event) {
-      gwd.actions.events.addHandler('forwardbutton', 'click', gwd.auto_ForwardbuttonClick, false);
-      gwd.actions.events.addHandler('backbutton', 'click', gwd.auto_BackbuttonClick, false);
       gwd.actions.events.addHandler('document.body', 'event-2', gwd.auto_BodyEvent_2, false);
       gwd.actions.events.addHandler('document.body', 'event-1', gwd.auto_BodyEvent_1, false);
+      gwd.actions.events.addHandler('Start', 'click', gwd.auto_StartClick, false);
+      gwd.actions.events.addHandler('Back', 'click', gwd.auto_BackClick, false);
       gwd.actions.timeline.captureAnimationEnd(document.body);
     };
     gwd.actions.events.deregisterEventHandlers = function(event) {
-      gwd.actions.events.removeHandler('forwardbutton', 'click', gwd.auto_ForwardbuttonClick, false);
-      gwd.actions.events.removeHandler('backbutton', 'click', gwd.auto_BackbuttonClick, false);
       gwd.actions.events.removeHandler('document.body', 'event-2', gwd.auto_BodyEvent_2, false);
       gwd.actions.events.removeHandler('document.body', 'event-1', gwd.auto_BodyEvent_1, false);
+      gwd.actions.events.removeHandler('Start', 'click', gwd.auto_StartClick, false);
+      gwd.actions.events.removeHandler('Back', 'click', gwd.auto_BackClick, false);
       gwd.actions.timeline.releaseAnimationEnd(document.body);
     };
     document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -420,10 +420,10 @@ body {
 
 <body class="htmlNoPages">
   <img src="Picture1.png" class="gwd-img-b9rx gwd-gen-kc0pgwdanimation">
-  <button id="backbutton" class="gwd-button-11cd">Back</button>
-  <button id="forwardbutton" class="gwd-button-1yv4">Forward</button>
   <div class="gwd-animation-event event-1-animation" data-event-name="event-1" data-event-time="0"></div>
   <div class="gwd-animation-event event-2-animation" data-event-name="event-2" data-event-time="1000"></div>
+  <div class="gwd-div-1myy" id="Back"></div>
+  <div class="gwd-div-1w59" id="Start"></div>
 
 
 </body></html>
